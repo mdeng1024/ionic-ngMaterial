@@ -1,7 +1,6 @@
 (function(){
 
-  angular
-       .module('users')
+  angular.module('users')
        .controller('UserController', [
           'userService', '$mdSidenav', '$mdBottomSheet', '$log', '$q',
           UserController
@@ -65,7 +64,7 @@
 
         $mdBottomSheet.show({
           parent: angular.element(document.getElementById('content')),
-          templateUrl: '/templates/contactSheet.html',
+          templateUrl: 'templates/contactSheet.html',
           controller: [ '$mdBottomSheet', UserSheetController],
           controllerAs: "vm",
           bindToController : true,
